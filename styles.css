@@ -1,0 +1,224 @@
+/* Estilos Globais */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    display: grid;
+    min-height:100vh
+}
+
+/*Menu superior - Header */
+.customheader {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 20rem 1fr 1fr;
+    width: 100%;
+    height: 7rem; 
+    padding: 0 1rem;       
+    background-color: #B2E1FF;
+    position: fixed;
+}
+
+.button.inserir {
+    background-color: #5BA4D6;
+}
+
+.button.editar {
+    background-color: #FF9633;
+}
+
+.button.excluir {
+    background-color: #FF6347;
+}
+
+.button {
+    padding: .625rem 1.25rem;
+    border: none;
+    border-radius: .3125rem;
+    color: white;
+    cursor: pointer;
+}
+
+/* Barra de Pesquisa/Input */
+.search-input {
+    grid-column: 2;
+    width: 28.8125rem;
+    padding: .625rem;
+    border-radius: .625rem;
+    border: none;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    font-size: 16px;    
+}
+
+/* Botões de Ação */
+.buttons-container{
+    grid-column: 3;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 2rem; /* Espaçamento entre os elementos da grid */
+}
+
+/* Menu Lateral */
+.sidebar {
+    display: grid;
+    grid-template-rows: auto auto 3rem;    
+    background-color: #336B4A;
+    color: #FFFFFF;
+    width: 17rem;
+    height: 100vh;
+    position: fixed;
+}
+
+/* Logo Sessori */
+.logo-verde {
+    margin-left: 4rem;
+    grid-row: 1;
+    width: 15rem;
+    height: 12rem;
+}
+
+/* Configuração Menu Lateral */
+.menu {
+    width: fit-content;
+}
+  
+.menu ul {
+    list-style: none;
+}
+  
+.menu li {
+    margin-bottom: 1rem;
+}
+  
+.menu a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    padding: 0.3rem;
+    transition: background-color 0.3s;
+}
+  
+.menu a:hover {
+    background-color: #6AA180;
+}
+  
+.icon {
+    width: 24px;  /* Define o tamanho do ícone */
+    height: 24px; /* Define o tamanho do ícone */
+    margin-right: 10px;
+}
+  
+.label {
+    flex-grow: 1;
+}
+
+/* Sair Lateral */
+.sair-lateral {
+    border: none;
+    cursor: pointer;
+    color:#FFFFFF ;
+    text-align: center;
+    font-size: 1rem;
+    background-color: #6AA180;
+    grid-row: 3;
+    width: 17rem;
+}
+
+.content{
+    margin-top: 8rem;
+    margin-left: 17rem;
+    display: flex;
+    width: 100vh;
+}
+
+/* Formulário de Usuário */
+.Side1 {
+    display: grid;
+    padding: 3.5rem;
+}
+
+.user-form .tab {
+    border: none;
+    display: inline-block;
+    padding: .4375rem 1.25rem;
+    border-radius: 1.25rem;
+    margin-right: .3125rem;
+    cursor: pointer;
+    background-color: #C8E4D3;
+    margin-bottom: 2.1875rem
+}
+
+.user-form input {
+
+    width: 100%;
+    padding: .625rem;
+    border: .1875rem solid #5BA4D6;
+    border-radius: .625rem;
+    position: relative;
+}
+
+.user-form .tab.active {
+    background-color: #336B4A;
+    color: #000000;
+}
+
+.save-button {
+    grid-column: 4;
+    background-color: #5DBA47;
+    color: white;
+    border: none;
+    padding: .75rem;
+    width: 10rem;
+    border-radius: .3125rem;
+    cursor: pointer;
+    position: absolute;
+}
+
+
+/*-------------------------------------------------------------------------------------------*/
+
+/* Efeito de Transição */
+/*.menu-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background-color: #488574;
+    /* Cor verde mais escuro */
+    /*z-index: -1;
+    transition: transform 0.3s ease-in-out;
+    transform: scaleX(0); /* Inicialmente escondido
+}*/
+
+/* Efeito de Transição */
+/*.menu-item.active::before {
+    transform: scaleX(2);
+    /* Expande para 100% quando ativo
+}
+
+#codigo {
+    width: 7.8125rem;
+}
+
+.menu-item {
+    display: grid;
+    grid-template-columns: auto auto;
+    cursor: pointer;
+}
+
+/* Icones da Barra Lateral 
+.icons-bar {
+    cursor: pointer;
+    position: relative;
+    display: flex;
+}
+
+
+
+
+
+
+

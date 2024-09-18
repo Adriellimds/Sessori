@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sessori</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!--Menu superior-->
+    <header class="customheader">
+        <!-- Barra de Pesquisa -->
+        <input type="text" placeholder="Pesquisar usuário" class="search-input">
+        <!--Botões principais-->
+            <div class="buttons-container">
+                <button class="button inserir" id="inserirBtn">INSERIR</button>
+                <button class="button editar" id="editarBtn">EDITAR</button>
+                <button class="button excluir" id="excluirBtn">EXCLUIR</button>
+            </div>
+    </header>
+    <!-- Menu Lateral -->
+    <div class="sidebar">
+        <object class=logo-verde data="src/Logo_Cadastro.svg" type="image/svg+xml" width="100"
+                height="100"></object>
+        <!--<div class="Nav-Options">
+            <div class="menu-item">
+                <object class=icons-bar data="src/User.svg" type="image/svg+xml" width="28" height="33  ">
+                </object>
+                <p>Usuários</p>  
+            </div>
+            <div class="menu-item">
+                <object class=icons-bar data="src/Room.svg" type="image/svg+xml" width="28" height="33"></object>
+                <p>Espaços</p>
+            </div>
+            <div class="menu-item">
+                <object class=icons-bar data="src/Tools.svg" type="image/svg+xml" width="28"
+                    height="33"></object>
+                    <p>Solicitações</p>
+            </div>
+            <div class="menu-item">
+                <object class=icons-bar data="src/Message.svg" type="image/svg+xml" width="28"
+                    height="33"></object>
+                    <p>Disparar Alertas</p>
+            </div>
+            <div class="menu-item">
+                <object class=icons-bar data="src/custom.svg" type="image/svg+xml" width="28"
+                    height="33"></object>
+                    <p>Customizar</p>
+            </div>
+            <div class="menu-item">
+                <object class=icons-bar data="src/Config.svg" type="image/svg+xml" width="28"
+                    height="28"></object>
+                    <p>Configurações</p>
+            </div>
+            <div class="menu-item">
+                <object class=icons-bar data="src/phone.svg" type="image/svg+xml" width="28"
+                    height="33"></object>
+                    <p>Suporte</p>
+            </div>
+        </div>-->
+
+        <nav class="menu">
+            <ul>
+              <li>
+                <a href="#">
+                  <img src="/src/User.svg" alt="Usuários" class="icon"> <!-- Caminho do ícone -->
+                  <span class="label">Usuários</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="/src/Room.svg" alt="Espaços" class="icon">
+                  <span class="label">Espaços</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="/src/Tools.svg" alt="Solicitações" class="icon">
+                  <span class="label">Solicitações</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="/src/Message.svg" alt="Disparar Alertas" class="icon">
+                  <span class="label">Disparar Alertas</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="/src/custom.svg" alt="Customizar" class="icon">
+                  <span class="label">Customizar</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="/src/Config.svg" alt="Configurações" class="icon">
+                  <span class="label">Configurações</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="/src/Phone.svg" alt="Suporte" class="icon">
+                  <span class="label">Suporte</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+        <button class="sair-lateral">SAIR</button>
+    </div>
+
+     <!-- Conteúdo Principal -->
+    <Div class="content">     
+        
+        <div class="Side1">
+            <!-- Formulário de Usuário -->
+            <div class="user-form">
+                <!-- Botões Seleção TipoUsuario -->
+                <div class="user-type">
+                    <button class="tab active">Administrador</button>
+                    <button class="tab">Docente</button>
+                </div>
+
+                <!-- Campos do Formulário -->
+                <div class="placeholders">
+                    <input type="text" placeholder="Código" id="codigo">
+                    <input type="text" placeholder="Nome" id="nome">
+                    <input type="text" placeholder="Sobrenome" id="sobrenome">
+                    <input type="email" placeholder="E-mail" id="email">
+                    <input type="password" placeholder="Senha" id="senha">
+                </div>
+            </div>
+        </div>
+
+        <div class="Side2">
+            <!-- Botão Salvar -->
+            <button class="save-button">SALVAR</button>
+        </div>
+    </Div> 
+
+    <!-- Script JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
